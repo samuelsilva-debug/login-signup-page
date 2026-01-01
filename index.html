@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/1c/ba/0f/1cba0f74dabc530b4133d02c4aa73fa1.jpg">
+    <div class="glass">
+        <div id="tela-sign-in">
+            <div id="conjunto">
+                <p>Email ou nome de usuário:</p>
+                <input type="email">
+                <br>
+                <p>Senha</p>
+                <input type="password">
+                
+                <p onclick="
+                const element = document.getElementById('tela-sign-up');
+                element.scrollIntoView();
+                ">Tela2</p>
+            </div>
+        </div>
+        <div id="tela-sign-up">
+            <p>Email ou nome de usuário:</p>
+            <input type="email">
+            <br>
+            <p>Senha</p>
+            <input type="password">
+            <p onclick="
+                const element = document.getElementById('tela-sign-in');
+                element.scrollIntoView();
+            ">Tela1</p>
+        </div>
+    </div>
+</body>
+</html>
